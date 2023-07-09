@@ -2,24 +2,30 @@
 .livros{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: end;
+    align-items: start;
     height: 80vh;
+    margin-left: 50px;
+
+    &__titulo{
+        width: 150px;
+        border-bottom: 3px solid variaveis.$corTextoTema;
+    }
 
     &__itens{
         display: flex;
-        justify-content: center;
+        justify-content: end;
         height: 200px;
-        margin: 100px 0;
+        margin: 50px 0;
        
         img{
             width: 150px;
-            margin: 0 10px;
-            transition: 0.7s ease-in-out;
+            margin-right: 20px;
+            transition: 0.5s ease-in-out;
             
 
             &:hover{
-                transform: scale(2);
+                transform: scale(1.5);
                 box-shadow: 0px 1px 10px 5px rgba(variaveis.$corTextoTema, 0.3);
                 
             }

@@ -1,6 +1,9 @@
 
 
 .autora{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 100vh;
     background-color: #01131c;
 
@@ -10,17 +13,30 @@
         justify-content: center;
         align-items: center;
         height: 80vh;
+        padding-top: 120px;
 
-        img{
-            width: 250px;
-            height: 250px;
-            border-radius: 10px;
-            margin: 30px 0;
+        &__link{
+
+            &__image{
+                width: 300px;
+                height: 200px;
+                border-radius: 8px;
+                margin: 30px 0;
+            } 
         }
+        
 
         p{
-            width: 600px;
+            text-align: center;
+            width: 700px;
             min-height: 200px;
+        }
+
+        &__rule{
+            width: 150px;
+            margin: 30px 0;
+
+            
         }
     }
 }

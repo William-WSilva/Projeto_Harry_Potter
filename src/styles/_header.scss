@@ -1,24 +1,23 @@
 @use "variaveis";
 
-
 .header{
     height: 95vh;
     background-image: url("../../dist/images/Harry_Potter_Baner.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: relative;
-    
+
     &__Menu{
         background-color: #000;
         height: 60px;
+        width: 100%;
         display: flex;
         align-items: center;
-        position: sticky;
+        position: fixed;
         top: 0;
         left: 0;
+        z-index: 999;
 
-        
-        
         &__logo{
             padding-top: 50px;
             width: 250px;
@@ -62,6 +61,4 @@
             }
         }
     }
-    
-
 }

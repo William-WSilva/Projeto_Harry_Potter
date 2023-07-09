@@ -12,25 +12,25 @@
   <header class="header border_efect"> <!-- Menu  -->
         <div class="header__Menu">
             <h1>
-                <img class="header__Menu__logo" src="./dist/images/Harry_Potter_Logo.png" alt="">
+                <img class="header__Menu__logo" src="./dist/images/Harry_Potter_Logo_Dourado.png" alt="">
             </h1>
             <nav>
                 <ul class="header__Menu__links">
                     <li class="header__Menu__links__item" >
-                        <a class="header__Menu__links__item__link" href="#">Filmes</a>
-                        <img class="header__Menu__links__item__toggle" src="./src/images/Pomo_de_Ouro_1.png" alt="">
+                        <a class="header__Menu__links__item__link" href="#carousel-exemplo">Filmes</a>
+                        <img class="header__Menu__links__item__toggle" src="./dist/images/Pomo_de_Ouro_1.png" alt="">
                     </li>
                     <li class="header__Menu__links__item">
-                        <a class="header__Menu__links__item__link" href="#">Livros</a>
-                        <img class="header__Menu__links__item__toggle" src="./src/images/Pomo_de_Ouro_1.png" alt="">
+                        <a class="header__Menu__links__item__link" href="#livros">Livros</a>
+                        <img class="header__Menu__links__item__toggle" src="./dist/images/Pomo_de_Ouro_1.png" alt="">
                     </li>
                     <li class="header__Menu__links__item">
-                        <a class="header__Menu__links__item__link" href="#">Games</a>
-                        <img class="header__Menu__links__item__toggle"src="./src/images/Pomo_de_Ouro_1.png" alt="">
+                        <a class="header__Menu__links__item__link" href="#games">Games</a>
+                        <img class="header__Menu__links__item__toggle" src="./dist/images/Pomo_de_Ouro_1.png" alt="">
                     </li>
                     <li class="header__Menu__links__item ">
-                        <a class="header__Menu__links__item__link" href="#">Autora</a>
-                        <img class="header__Menu__links__item__toggle" src="./src/images/Pomo_de_Ouro_1.png" alt="">
+                        <a class="header__Menu__links__item__link" href="#autora">Autora</a>
+                        <img class="header__Menu__links__item__toggle" src="./dist/images/Pomo_de_Ouro_1.png" alt="">
                     </li>
                 </ul>
             </nav>
@@ -51,7 +51,7 @@
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="15000">
-                        <img class="border_efect" src="./dist/images/Filmes/Harry_Potter_2.jpg" alt="">
+                        <img class="border_efect" src="./dist/images/Filmes/Harry_Potter_2.webp" alt="">
                         <div class="carousel-caption">
                             <h2 class="title">Harry Potter e a Câmara Secreta</h2>
                             <p class="carousel__sinopse text">
@@ -69,7 +69,7 @@
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="15000">
-                        <img class="border_efect" src="./dist/images/Filmes/Harry_Potter_4.jpg" alt="">
+                        <img class="border_efect" src="./dist/images/Filmes/Harry_Potter_4.webp" alt="">
                         <div class="carousel-caption">
                             <h2 class="title">Harry Potter e o Cálice de Fogo</h2>
                             <p class="carousel__sinopse text">
@@ -105,7 +105,7 @@
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="15000">
-                        <img class="border_efect" src="./dist/images/Harry_Potter_8_3.jpg" alt="">
+                        <img class="border_efect" src="./dist/images/Filmes/Harry_Potter_8.jpg" alt="">
                         <div class="carousel-caption">
                             <h2 class="title">Harry Potter e as Relíquias da Morte 2/2</h2>
                             <p class="carousel__sinopse text">
@@ -134,8 +134,8 @@
         </div>
         <div class="background__filmes">
         </div>
-        <div class="livros">
-            <h3 class="title">Livros</h3>
+        <div class="livros" id="livros"> <!-- Seção Livros -->
+            <h3 class="livros__titulo title">Livros</h3> 
             <div class="livros__itens">
                 <img src="./dist/images/Livros/Harry_Potter_1_Livro.jpg" alt="">
                 <img src="./dist/images/Livros/Harry_Potter_2_Livro.jpg" alt="">
@@ -148,26 +148,85 @@
         </div>
     </section>
 
-    <section class="games border_efect">
-
+    <section class="games" id="games"> <!-- Seção Games -->
+        <h2 class="title">Games</h2>
+        
+        <div class="games__images" >
+            <a class="games__images__link" href="https://www.youtube.com/watch?v=BtyBjOW8sGY" target="_blank">
+                <img class="games__images__link__image1 border_efect" src="./dist/images/Games/Game_1.gif" alt="">
+            </a>
+            <a class="games__images__link" href="https://www.youtube.com/watch?v=BtyBjOW8sGY" target="_blank">
+                <img class="games__images__link__image2 border_efect" src="./dist/images/Games/Game_2.gif" alt="">
+            </a>
+            <a class="games__images__link" href="https://www.youtube.com/watch?v=BtyBjOW8sGY" target="_blank">
+                <img class="games__images__link__image3 border_efect" src="./dist/images/Games/Game_3.gif" alt="">
+            </a>
+        </div>
+        <div class="games__plataformas">
+            <img class="games__plataformas__item" src="./dist/images/Games/PS_Logo.png" alt="">
+            <img class="games__plataformas__item" src="./dist/images/Games/Xbox_Logo.png" alt="">
+            <img class="games__plataformas__item" src="./dist/images/Games/Steam_Logo.png" alt="">
+        </div>
     </section>
 
-    <section class="autora border_efect">
+    <section class="autora border_efect" id="autora"> <!-- Seção autora -->
         <div class="autora__section">
-            <h2 class="title">J. K. Rowling</h2>
-            <img src="https://sobresagas.com.br/wp-content/uploads/2023/01/Qual-e-o-envolvimento-de-J.K.-Rowling-com-Hogwarts-Legacy-Divulgacao-do-jogo-reacende-debate-na-internet-Entenda.jpg" alt="">
-            <p class="text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque dolorum excepturi laboriosam in ab consequatur blanditiis? Maiores porro, consequuntur amet, facere assumenda quidem quam, sunt temporibus vero qui optio ducimus!
+            <h2 class="title">Autora: J. K. Rowling</h2>
+            <a class="autora__section__link" href="#https://pt.wikipedia.org/wiki/J._K._Rowling">
+                <img class="autora__section__link__image border_efect" src="./dist/images/J_K_Rowling.jpg" alt="">
+            </a>
+            <img class="autora__section__rule" src="./dist/images/rule.png" alt="">
+            <p class="autora__section__biografia text">
+                J. K. Rowling (1965) é uma escritora britânica, autora da série "Harry Potter", que conquistou o público jovem e vendeu milhões de exemplares. J. K. Rowling nasceu em Yate, Inglaterra, no dia 31 de julho de 1965. Filha de Peter James Rowling e de Anne Volant, passou sua infância na cidade de Chepstow.
             </p>
         </div>
     </section>
 
-    <footer class="footer">
-
+    <footer class="footer" id="contato"> <!-- Seção Rodapé -->
+        <div class="footer__links">
+            <img class="footer__links__logo" src="./dist/images/Harry_Potter_Logo_Prata.png" alt="">
+            <div>
+                <ul class="footer__links__lista">
+                    <a href="#contato">
+                        <li class="footer__links__lista__link text_footer">Sites</li>
+                    </a>
+                    <a href="#contato">
+                        <li class="footer__links__lista__link text_footer">Artigos</li>
+                    </a>
+                    <a href="#contato">
+                        <li class="footer__links__lista__link text_footer">Parceiros</li>
+                    </a>
+                    <a href="#contato">
+                        <li class="footer__links__lista__link text_footer">Forum</li>
+                    </a>
+                </ul>
+            </div>
+            <div>
+                <span class="footer__links__direitosAutorais text_footer">Harry Potter publishung rights &copy; J.K.R &copy; Warner Bros. Entertainment Inc. All right reserved.</span>
+            </div>
+        </div>
+        <div class="footer__contato">
+            <div>
+                <label class="text_footer" for="email">Sign up for our Newsletter to find out about announcements and deals!</label>
+                <input class="footer__contato__email" id="email" type="text">
+                <button class="footer__contato__enviar">Sign Up</button>
+            </div>
+            <div class="footer__contato__midias">
+                <a href="https://pt-br.facebook.com/" target="_blank">
+                    <img class="footer__contato__midias__midia" src="./dist/images/redes_sociais/facebook.png" alt="facebook">
+                </a>
+                <a href="https://instagram.com/" target="_blank">
+                    <img class="footer__contato__midias__midia" src="./dist/images/redes_sociais/instagram.png" alt="instagram">
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <img class="footer__contato__midias__midia" src="./dist/images/redes_sociais/twitter.png" alt="twitter">
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img class="footer__contato__midias__midia" src="./dist/images/redes_sociais/youtube.png" alt="youtube">
+                </a>
+            </div>
+        </div>
     </footer>
-
-
-
 
     <script src="./assets/lib/Bootstrap.bundle.min.js"></script>
     <script src="./dist/scripts/main.js"></script>

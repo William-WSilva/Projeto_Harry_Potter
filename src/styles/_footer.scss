@@ -1,5 +1,87 @@
+@use "variaveis";
 
 .footer{
+    display: flex;
     height: 200px;
-    background-color: #001518;
+    padding: 10px 20px;
+    background-color: variaveis.$corTema;
+
+    &__links{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        text-align: start;
+
+        &__logo{
+            width: 200px;
+        }
+
+        &__lista{
+            display: flex;
+            justify-content: start;
+            margin: 10px 0;
+            padding: 0;
+
+            &__link{
+                list-style: none;
+                font-weight: bold;
+                margin-right: 20px;
+
+            }
+        }
+
+        a{
+            text-decoration: none;
+        }
+        div > &__direitosAutorais{
+            font-size: 12px;
+            text-decoration: none;
+        }
+    }
+
+    &__contato{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        text-align: end;
+
+        &__email{
+            width: 60%;
+            height: 35px;
+            border-radius: 4px;
+            margin: 20px 0;
+            border: none;
+        }
+
+        &__enviar{
+            width: 100px;
+            height: 35px;
+            border-radius: 4px;
+            border: none;
+            margin: 20px 0;
+            background-color: variaveis.$corTextoFooter;
+            color: #fff;
+
+            &:hover{
+                background-color: lighten(variaveis.$corTextoFooter, 10%) ;
+            }
+        }
+
+        &__midias{
+
+            a{
+                text-decoration: none;
+            }
+            &__midia{
+                width: 32px;
+                margin-left: 10px;
+                list-style: none;
+                text-decoration: none;
+            }
+        }
+    }
+
+    
 }

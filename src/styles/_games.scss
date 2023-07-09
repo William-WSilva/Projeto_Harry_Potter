@@ -1,10 +1,57 @@
-
+@use "variaveis";
 
 .games{
-    height: 150vh;
-    background-image: url("../../dist/images/Games/GamesBanner.jpg");
+    height: 250vh;
+    background-image: url("../../dist/images/Games/GamesBanner.webp");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
 
+    &__images{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+
+        &__link{
+
+            &__image1{
+                width: 300px;
+                height: 200px;
+            }
+            &__image2{
+                width: 400px;
+                height: 250px;
+            }
+            &__image3{
+                width: 300px;
+                height: 200px;
+            }
+        }
+    }
+    
+    &__plataformas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        background-color: rgba(#fff, 0.6);
+        width: 600px;
+        height: 50px;
+        border-radius: 8px;
+        border: 1px solid variaveis.$corTextoTema;
+        padding: 5px 0;
+
+        &__item{
+            width: 110px;
+            height: 30px;
+            margin: 0 20px;
+        }
+    }
+
+
+    
 }
