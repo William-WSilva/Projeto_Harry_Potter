@@ -8,10 +8,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 50px;
 
     @media screen and (max-width: 767px) {
-        height: 180vh;           
+        height: 160vh;
+        justify-content: space-between;           
     }
 
     &__images{
@@ -70,9 +71,10 @@
 
         @media screen and (max-width: 767px) {
             width: 150px;
-            height: 120px;
+            height: 110px;
             flex-direction: column;
-            margin-top: 85vh;     
+            margin-top: 70vh;
+            margin-bottom: 5vh; 
         }
 
         &__item{
