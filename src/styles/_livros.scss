@@ -11,7 +11,7 @@
     @media screen and (max-width: 767px) {
         align-items: center;
         height: 100vh;
-        width: 270px;
+        width: 90%;
     }
 
     &__titulo{
@@ -23,7 +23,8 @@
 
         &__sinopse{
             padding: 10px;
-            width: 40vw;
+            width: 50vw;
+            height: 30vh;
             background-color: rgba(variaveis.$corFundoTexto, 0.7);
 
             @media screen and (max-width: 767px) {
@@ -34,19 +35,20 @@
 
     &__itens{
         display: flex;
-        justify-content: end;
-        height: 300px;
+        justify-content: start;
+        align-items: center;
+        height: 320px;
         width: 100%;
-        margin: 50px 0;
+        margin: 10px 0;
+        overflow-x: scroll;
         
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 665px) {
            display: flex;
            flex-direction: column;
            justify-content: start;
            align-items: center;
-           height: 400px;
-           width: 100%;
-           margin-top: 0px;
+           height: 300px;
+           width: 50vw;
            overflow-y: scroll;
            
         }
