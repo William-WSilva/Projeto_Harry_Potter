@@ -9,15 +9,16 @@ let posicaoScrollAtual = 0
 
 // ======= Eventos ======= //
 
+// ======= Destacar menu ativo ======= //
 for (let i = 0; i < linksMenu.length; i++) {
     linksMenu[i].addEventListener("click", function(link){
         
         desativarLinks();
         AtivarLink(link);
-        
     });
 }
 
+// ======= Ativar menu Toggle ======= //
 dropsMenu.addEventListener("click", function(){
     if (dropLinks.style.display === "none") {
         dropLinks.style.display = "block";
@@ -26,50 +27,7 @@ dropsMenu.addEventListener("click", function(){
     }
 })
 
-
-
-// Captura a seção atual com base na posição na janela
-document.addEventListener("DOMContentLoaded", function () {
-    const secaoFilmes = document.querySelector(".Filmes__carousel").getBoundingClientRect();
-    const livros = document.querySelector(".livros").getBoundingClientRect();
-    const games = document.querySelector(".games").getBoundingClientRect();
-    const autora = document.querySelector(".autora").getBoundingClientRect();
-    const footer = document.querySelector(".footer").getBoundingClientRect();
-    
-    document.addEventListener("scroll", function(){
-        posicaoScrollAtual = window.scrollY;
-        console.log(`autora: ${autora.top} footer: ${footer.top} Atual: ${posicaoScrollAtual}`)
-
-
-        // Verificar a posição atual do scroll
-        const secoes = [
-            { nome: "Filmes", top: secaoFilmes.top },
-            { nome: "Livros", top: livros.top },
-            { nome: "Games", top: games.top },
-            { nome: "Autora", top: autora.top },
-            { nome: "Footer", top: footer.top }
-          ];
-          
-          for (const secao of secoes) {
-            if (posicaoScrollAtual > secao.top) {
-              console.log(`Dentro da seção ${secao.nome} ${secao.top} `);
-            }
-        }
-    })
-  });
-
-
-  
-  
-  
-
-
-
-
-// $(document).ready(function() {
-//     $("#carousel_imagens").slick({autoplay: true});
-// })
-
+// ======= Validar Email ======= //
 $(".footer__contato__email_newsletter").validate({
     rules:{
         email:{required: true, email: true}},
