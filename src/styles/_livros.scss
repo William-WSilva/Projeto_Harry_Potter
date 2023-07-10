@@ -11,7 +11,7 @@
     @media screen and (max-width: 767px) {
         align-items: center;
         height: 100vh;
-        width: 90%;
+        width: 80%;
     }
 
     &__titulo{
@@ -47,10 +47,9 @@
            flex-direction: column;
            justify-content: start;
            align-items: center;
-           height: 300px;
-           width: 50vw;
+           height: 320px;
+           width: 100%;
            overflow-y: scroll;
-           
         }
 
         img{
