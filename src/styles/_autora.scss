@@ -1,19 +1,23 @@
-
+@use "variaveis";
 
 .autora{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
-    background-color: #01131c;
+    height: 120vh;
+    background-color: variaveis.$corTemaAutora;
+
+    @media screen and (max-width: 767px) {
+        height: 150vh;           
+    }
 
     &__section{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 80vh;
-        padding-top: 120px;
+        height: 200vh;
+        padding-top: 50px;
 
         &__link{
 
@@ -25,11 +29,14 @@
             } 
         }
         
-
         p{
             text-align: center;
             width: 700px;
             min-height: 200px;
+
+            @media screen and (max-width: 767px) {
+                width: 300px;   
+            }
         }
 
         &__rule{

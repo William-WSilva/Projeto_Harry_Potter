@@ -12,37 +12,46 @@
   <header class="header border_efect"> <!-- Menu  -->
         <div class="header__Menu">
             <h1>
-                <img class="header__Menu__logo" src="./dist/images/Harry_Potter_Logo_Dourado.png" alt="">
+                <img class="header__Menu__logo" src="./dist/images/Harry_Potter_Logo_Dourado.png" alt="Harry_Potter_Logo">
             </h1>
             <nav>
                 <ul class="header__Menu__links">
                     <li class="header__Menu__links__item" >
                         <a class="header__Menu__links__item__link" href="#carousel-exemplo">Filmes</a>
-                        <img class="header__Menu__links__item__toggle" src="./dist/images/Pomo_de_Ouro_1.png" alt="">
+                        <img class="header__Menu__links__item__toggle" src="./dist/images/Pomo_de_Ouro_1.png" alt="Pomo_de_Ouro">
                     </li>
                     <li class="header__Menu__links__item">
                         <a class="header__Menu__links__item__link" href="#livros">Livros</a>
-                        <img class="header__Menu__links__item__toggle" src="./dist/images/Pomo_de_Ouro_1.png" alt="">
+                        <img class="header__Menu__links__item__toggle" src="./dist/images/Pomo_de_Ouro_1.png" alt="Pomo_de_Ouro">
                     </li>
                     <li class="header__Menu__links__item">
                         <a class="header__Menu__links__item__link" href="#games">Games</a>
-                        <img class="header__Menu__links__item__toggle" src="./dist/images/Pomo_de_Ouro_1.png" alt="">
+                        <img class="header__Menu__links__item__toggle" src="./dist/images/Pomo_de_Ouro_1.png" alt="Pomo_de_Ouro">
                     </li>
                     <li class="header__Menu__links__item ">
                         <a class="header__Menu__links__item__link" href="#autora">Autora</a>
-                        <img class="header__Menu__links__item__toggle" src="./dist/images/Pomo_de_Ouro_1.png" alt="">
+                        <img class="header__Menu__links__item__toggle" src="./dist/images/Pomo_de_Ouro_1.png" alt="Pomo_de_Ouro">
+                    </li>
+                    <li class="header__Menu__links__item ">
+                        <a class="header__Menu__links__item__link" href="#contato">Contato</a>
+                        <img class="header__Menu__links__item__toggle" src="./dist/images/Pomo_de_Ouro_1.png" alt="Pomo_de_Ouro">
                     </li>
                 </ul>
             </nav>
+            <div class="header__Menu__drops">
+                <div class="header__Menu__drops__drop"></div>
+                <div class="header__Menu__drops__drop"></div>
+                <div class="header__Menu__drops__drop"></div>
+            </div>
         </div>    
     </header>
 
-    <section class="Filmes__carousel">  <!-- Seção Filmes -->
-        <div class="container">
+    <section class="Filmes__carousel" id="filmes">  <!-- Seção Filmes -->
+        <div class="container"> <!-- Carousel Filmes -->
             <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="15000">
-                        <img class="border_efect" src="./dist/images/Filmes/Harry_Potter_1.jpg" alt="">
+                        <img class="border_efect" src="./dist/images/Filmes/Harry_Potter_1.jpg" alt="Harry_Potter_1">
                         <div class="carousel-caption">
                             <h2 class="title">Harry Potter e a Pedra Filosofal</h2>
                             <p class="carousel__sinopse text">
@@ -51,7 +60,7 @@
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="15000">
-                        <img class="border_efect" src="./dist/images/Filmes/Harry_Potter_2.webp" alt="">
+                        <img class="border_efect" src="./dist/images/Filmes/Harry_Potter_2.webp" alt="Harry_Potter_2">
                         <div class="carousel-caption">
                             <h2 class="title">Harry Potter e a Câmara Secreta</h2>
                             <p class="carousel__sinopse text">
@@ -60,7 +69,7 @@
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="15000">
-                        <img class="border_efect" src="./dist/images/Filmes/Harry_Potter_3.jpg" alt="">
+                        <img class="border_efect" src="./dist/images/Filmes/Harry_Potter_3.jpg" alt="Harry_Potter_3">
                         <div class="carousel-caption">
                             <h2 class="title">Harry Potter e o Prisioneiro de Azkaban</h2>
                             <p class="carousel__sinopse text">
@@ -69,7 +78,7 @@
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="15000">
-                        <img class="border_efect" src="./dist/images/Filmes/Harry_Potter_4.webp" alt="">
+                        <img class="border_efect" src="./dist/images/Filmes/Harry_Potter_4.webp" alt="Harry_Potter_4">
                         <div class="carousel-caption">
                             <h2 class="title">Harry Potter e o Cálice de Fogo</h2>
                             <p class="carousel__sinopse text">
@@ -78,7 +87,7 @@
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="15000">
-                        <img class="border_efect" src="./dist/images/Filmes/Harry_Potter_5.jpg" alt="">
+                        <img class="border_efect" src="./dist/images/Filmes/Harry_Potter_5.jpg" alt="Harry_Potter_5">
                         <div class="carousel-caption">
                             <h2 class="title">Harry Potter e a Ordem da Fênix</h2>
                             <p class="carousel__sinopse text">
@@ -87,7 +96,7 @@
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="15000">
-                        <img class="border_efect" src="./dist/images/Filmes/Harry_Potter_6.jpg" alt="">
+                        <img class="border_efect" src="./dist/images/Filmes/Harry_Potter_6.jpg" alt="Harry_Potter_6">
                         <div class="carousel-caption">
                             <h2 class="title">Harry Potter e o Enigma do Príncipe</h2>
                             <p class="carousel__sinopse text">
@@ -96,7 +105,7 @@
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="15000">
-                        <img class="border_efect" src="./dist/images/Filmes/Harry_Potter_7.jpg" alt="">
+                        <img class="border_efect" src="./dist/images/Filmes/Harry_Potter_7.jpg" alt="Harry_Potter_7">
                         <div class="carousel-caption">
                             <h2 class="title">Harry Potter e as Relíquias da Morte 1/2</h2>
                             <p class="carousel__sinopse text">
@@ -105,7 +114,7 @@
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="15000">
-                        <img class="border_efect" src="./dist/images/Filmes/Harry_Potter_8.jpg" alt="">
+                        <img class="border_efect" src="./dist/images/Filmes/Harry_Potter_8.jpg" alt="Harry_Potter_8">
                         <div class="carousel-caption">
                             <h2 class="title">Harry Potter e as Relíquias da Morte 2/2</h2>
                             <p class="carousel__sinopse text">
@@ -132,40 +141,44 @@
                 </div>
             </div>
         </div>
-        <div class="background__filmes">
+
+        <div class="background__filmes"> <!-- Fundo Sinopse Filme -->
         </div>
+
         <div class="livros" id="livros"> <!-- Seção Livros -->
-            <h3 class="livros__titulo title">Livros</h3> 
+            <h3 class="livros__titulo title">Livros</h3>
+            <p class="livros__titulo__sinopse text">
+                Em sete livros que se tornaram o maior fenômeno editorial de todos os tempos, com mais de 450 milhões de exemplares vendidos e traduções em 78 idiomas, Harry Potter não é exposto apenas a batalhas e feitiços. Ele precisa superar traições, surpresas e, sobretudo, aprender a lidar com os próprios sentimentos. O amor, a amizade e claro, uma boa dose de magia e imaginação, são os elementos-chave para da maior saga bruxa de todos os tempos.
+            </p>
             <div class="livros__itens">
-                <img src="./dist/images/Livros/Harry_Potter_1_Livro.jpg" alt="">
-                <img src="./dist/images/Livros/Harry_Potter_2_Livro.jpg" alt="">
-                <img src="./dist/images/Livros/Harry_Potter_3_Livro.jpg" alt="">
-                <img src="./dist/images/Livros/Harry_Potter_4_Livro.jpg" alt="">
-                <img src="./dist/images/Livros/Harry_Potter_5_Livro.jpg" alt="">
-                <img src="./dist/images/Livros/Harry_Potter_6_Livro.jpg" alt="">
-                <img src="./dist/images/Livros/Harry_Potter_7_Livro.jpg" alt="">
+                <img src="./dist/images/Livros/Harry_Potter_1_Livro.jpg" alt="Harry_Potter_1">
+                <img src="./dist/images/Livros/Harry_Potter_2_Livro.jpg" alt="Harry_Potter_2">
+                <img src="./dist/images/Livros/Harry_Potter_3_Livro.jpg" alt="Harry_Potter_3">
+                <img src="./dist/images/Livros/Harry_Potter_4_Livro.jpg" alt="Harry_Potter_4">
+                <img src="./dist/images/Livros/Harry_Potter_5_Livro.jpg" alt="Harry_Potter_5">
+                <img src="./dist/images/Livros/Harry_Potter_6_Livro.jpg" alt="Harry_Potter_6">
+                <img src="./dist/images/Livros/Harry_Potter_7_Livro.jpg" alt="Harry_Potter_7">
             </div>
         </div>
     </section>
 
     <section class="games" id="games"> <!-- Seção Games -->
         <h2 class="title">Games</h2>
-        
         <div class="games__images" >
             <a class="games__images__link" href="https://www.youtube.com/watch?v=BtyBjOW8sGY" target="_blank">
-                <img class="games__images__link__image1 border_efect" src="./dist/images/Games/Game_1.gif" alt="">
+                <img class="games__images__link__image1 border_efect" src="./dist/images/Games/Game_1.gif" alt="HogwartsLegacy_Game_Trailer">
             </a>
             <a class="games__images__link" href="https://www.youtube.com/watch?v=BtyBjOW8sGY" target="_blank">
-                <img class="games__images__link__image2 border_efect" src="./dist/images/Games/Game_2.gif" alt="">
+                <img class="games__images__link__image2 border_efect" src="./dist/images/Games/Game_2.gif" alt="HogwartsLegacy_Game_Trailer">
             </a>
             <a class="games__images__link" href="https://www.youtube.com/watch?v=BtyBjOW8sGY" target="_blank">
-                <img class="games__images__link__image3 border_efect" src="./dist/images/Games/Game_3.gif" alt="">
+                <img class="games__images__link__image3 border_efect" src="./dist/images/Games/Game_3.gif" alt="HogwartsLegacy_Game_Trailer">
             </a>
         </div>
         <div class="games__plataformas">
-            <img class="games__plataformas__item" src="./dist/images/Games/PS_Logo.png" alt="">
-            <img class="games__plataformas__item" src="./dist/images/Games/Xbox_Logo.png" alt="">
-            <img class="games__plataformas__item" src="./dist/images/Games/Steam_Logo.png" alt="">
+            <img class="games__plataformas__item" src="./dist/images/Games/PS_Logo.png" alt="PS_Logo">
+            <img class="games__plataformas__item" src="./dist/images/Games/Xbox_Logo.png" alt="Xbox_Logo">
+            <img class="games__plataformas__item" src="./dist/images/Games/Steam_Logo.png" alt="Steam_Logo">
         </div>
     </section>
 
@@ -173,7 +186,7 @@
         <div class="autora__section">
             <h2 class="title">Autora: J. K. Rowling</h2>
             <a class="autora__section__link" href="#https://pt.wikipedia.org/wiki/J._K._Rowling">
-                <img class="autora__section__link__image border_efect" src="./dist/images/J_K_Rowling.jpg" alt="">
+                <img class="autora__section__link__image border_efect" src="./dist/images/J_K_Rowling.jpg" alt="Foto_J_K_Rowling">
             </a>
             <img class="autora__section__rule" src="./dist/images/rule.png" alt="">
             <p class="autora__section__biografia text">
@@ -206,11 +219,13 @@
             </div>
         </div>
         <div class="footer__contato">
-            <div>
-                <label class="text_footer" for="email">Sign up for our Newsletter to find out about announcements and deals!</label>
-                <input class="footer__contato__email" id="email" type="text">
-                <button class="footer__contato__enviar">Sign Up</button>
-            </div>
+            <form class="footer__contato__email_newsletter">
+                <label class="text_footer" for="email">
+                    Sign up for our Newsletter to find out about announcements and deals!
+                </label>
+                <input class="footer__contato__email" id="email" name="email" type="email" placeholder="  @email">
+                <button class="footer__contato__enviar" type="submit">Sign Up</button>
+            </form>
             <div class="footer__contato__midias">
                 <a href="https://pt-br.facebook.com/" target="_blank">
                     <img class="footer__contato__midias__midia" src="./dist/images/redes_sociais/facebook.png" alt="facebook">
@@ -228,7 +243,17 @@
         </div>
     </footer>
 
+    <!-- Script importação arquivo jquery -->
+    <script src="./assets/lib/code.jquery.com_jquery-3.7.0.min.js"></script>
+
+    <!-- Script importação arquivo jquery Validação input -->
+    <script src="./assets/lib/jquery.validate.min.js"></script>
+    <script src="./assets/lib/messages_pt_BR.min.js"></script>
+
+    <!-- Script importação arquivo Bootstrap -->
     <script src="./assets/lib/Bootstrap.bundle.min.js"></script>
+
+    <!-- Script importação arquivo Js -->
     <script src="./dist/scripts/main.js"></script>
 </body>
 </html>
